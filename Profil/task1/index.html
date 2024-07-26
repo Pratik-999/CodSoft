@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add background image to body */
+        body {
+            background-image: url(' S.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Styling for the header and text animation */
+        header {
+            text-align: center;
+            margin-top: 20vh; /* Adjust to center vertically */
+        }
+
+        .instagram-effect {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap; /* Ensure text stays in one line */
+            color: #17c4b3; /* Text color */
+            font-size: 36px; /* Adjust font size */
+            font-weight: bold; /* Make text bold */
+            font-family: Arial, sans-serif; /* Choose font family */
+        }
+
+        .instagram-effect span {
+            animation: instagram-fade 5s infinite; /* Adjust duration as needed */
+            opacity: 0; /* Start with text invisible */
+            display: inline-block;
+            padding-right: 5px; /* Add space between words */
+        }
+
+        .instagram-effect span:first-child {
+            color: red; /* Make the first span (Pratik_Nimangare) red */
+        }
+
+        /* Define keyframes for the fade-in animation */
+        @keyframes instagram-fade {
+            0%, 100% {
+                opacity: 0; /* Start and end with opacity 0 */
+            }
+            10%, 90% {
+                opacity: 1; /* Fade in and stay visible */
+            }
+        }
+
+        /* Styling for skills list */
+        #skills ul {
+            list-style-type: none; /* Remove default list styles */
+            padding: 0;
+        }
+
+        #skills li {
+            color: #f0c14b; /* Yellow color */
+            margin-bottom: 5px; /* Adjust spacing between items */
+        }
+
+        /* Styling for section headings */
+        #contact h2,
+        #resume h2,
+        #projects h2 {
+            color: #f0c14b; /* Yellow color */
+        }
+        #contact a {
+            text-decoration: none; /* Remove underline */
+            color: aquamarine; /* Blue color for email link */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="instagram-effect">
+            <span>Pratik_Nimangare</span>
+        </div>
+        <div class="">
+            <span>Web Developer & Designer</span>
+            <!-- Add more spans for additional words -->
+        </div>
+    </header>
+
+    <!-- Other sections -->
+    <section id="about">
+        <img src="profile-pic.jpeg" alt="Pratik_Nimangare Profile Picture">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX Design</li>
+            
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1 Image">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="1131w-3yHGAYDidp8.webp" download>Download Resume (PDF)</a>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="pratiknimangare.nbnscoe.comp@gmail.com">pratiknimangare.nbnscoe.comp@gmail.com</a></p>
+        <p>Phone: 9834595506</p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Pratik_Nimangare... All rights reserved.</p>
+    </footer>
+</body>
+</html>
