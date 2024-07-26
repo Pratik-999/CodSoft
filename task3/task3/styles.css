@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0c0202;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: #f43636;
+    background-image: url('StockCake-Glowing\ Hanging\ Bulb_1721957805.jpg'); /* Add your background image here */
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background: #f6f1f2;
+    color:#bb1818;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #bb1818,);
+    color: #bb1818;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
