@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('StockCake-Blooming\ Roses\ Display_1721954060.jpg'); /* add your background image URL here */
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+header {
+  background: linear-gradient(45deg, #ff007f, #ff9a8b, #f58529,#ff007f);
+  color:#f3f0f0;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.instagram-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.color-bar {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.color-bar:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  z-index: 1;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0.5); /* add a semi-transparent background to hero section */
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #333;
+}
+
+.learn-more {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.learn-more span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color:rgba(248, 244, 247, 0.462);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.learn-more:hover span {
+  transform: scaleX(1);
+}
+
+.features {
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.feature {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000701f1;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgb(220, 61, 61);
+}
+
+.feature i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.feature:hover i {
+  filter: grayscale(0);
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  
+  color: #a31616;
+}
